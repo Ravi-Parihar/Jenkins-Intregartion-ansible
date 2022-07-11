@@ -1,0 +1,14 @@
+---
+  - name: "Playing with Ansible and Git"
+    hosts: localhost
+    become: true
+     
+    tasks:
+     - name: Create a file called '/tmp/testfile.txt' with the content 'hello ravi'.
+       copy:
+          content: hello worldn anup
+          dest: /home/gigatorb/Desktop/mynewfile.txt
+     - debug: var=output.stdout_lines
+         
+      
+        

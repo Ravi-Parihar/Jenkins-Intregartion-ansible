@@ -1,0 +1,3 @@
+[webserver]
+localhost ansible_user=gigatorb ansible_pass=Gigatorb2022
+

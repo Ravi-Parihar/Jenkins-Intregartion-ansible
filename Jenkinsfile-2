@@ -1,0 +1,12 @@
+pipeline {
+  agent any
+   stages {
+    stage('Hello') {
+      steps {
+       
+        sh 'ansible-playbook  -vvv --extra-vars "ansible_sudo_pass=Gigatorb2022" playbooks/mariadb.yml '
+        
+      }
+    }
+  }
+}
